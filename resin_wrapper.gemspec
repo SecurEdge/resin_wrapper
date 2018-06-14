@@ -7,11 +7,11 @@ Gem::Specification.new do |spec|
   spec.name          = "resin_wrapper"
   spec.version       = ResinWrapper::VERSION
   spec.authors       = ["Rodney Cullen"]
-  spec.email         = ["rodcul@gmail.com"]
+  spec.email         = ["rcullen@securedgenetworks.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Gem to wrap Resin.io API}
+  spec.description   = %q{Gem to wrap Resin.io API}
+  spec.homepage      = "https://github.com/SecurEdge/resin_wrapper"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -32,4 +32,12 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "minitest"
+  spec.add_development_dependency "vcr"
+  spec.add_development_dependency "webmock"
+  spec.add_development_dependency "byebug"
+  spec.add_development_dependency "pp-colour"
+
+  spec.add_dependency "faraday"
+  spec.add_dependency "json"
 end

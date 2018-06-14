@@ -1,3 +1,5 @@
+.byebug_history
+/test/fixtures/
 /.bundle/
 /.yardoc
 /_yardoc/
