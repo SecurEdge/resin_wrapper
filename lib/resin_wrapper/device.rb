@@ -6,12 +6,17 @@ API_URL = 'https://api.resin.io/v4'.freeze
 
 module ResinWrapper
   class Device
-    attr_reader :id, :uuid, :name
+    attr_reader :id, :uuid, :device_name, :device_type, :is_online, :status, :os_variant, :location
     def initialize(attributes)
 
       @id = attributes['id']
       @uuid = attributes['uuid']
-      @name = attributes['device_name']
+      @device_name = attributes['device_name']
+      @device_type = attributes['device_type']
+      @is_online = attributes['is_online']
+      @status = attributes['status']
+      @os_variant = attributes['os_variant']
+      @location = attributes['location']
 
     end
 
@@ -26,6 +31,7 @@ module ResinWrapper
       response = conn.get
       parsed_response = JSON.parse(response.body)
       attributes = parsed_response['d'][0]
+      # byebug
       new(attributes)
     end
 

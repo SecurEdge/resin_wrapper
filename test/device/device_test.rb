@@ -14,7 +14,13 @@ class ResinWrapperDeviceTest < Minitest::Test
       # Check that the fields are accessible by our model
       assert_equal 1131087, device.id
       assert_equal "4c28d5cc7e45e9f325f4b6223103a698", device.uuid
-      assert_equal "sen-charlotte-serverroom", device.name
+      assert_equal "sen-charlotte-serverroom", device.device_name
+      assert_equal "raspberrypi3", device.device_type
+      assert_equal true , device.is_online
+      assert_equal "Idle", device.status
+      assert_equal "dev", device.os_variant
+      assert_equal "Charlotte, North Carolina, United States", device.location
+
     end
   end
 
