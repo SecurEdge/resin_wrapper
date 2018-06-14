@@ -21,7 +21,7 @@ class ResinWrapperDeviceTest < Minitest::Test
   def test_it_gives_back_all_devices
     VCR.use_cassette('all_devices') do
       devices = ResinWrapper::Device.all
-      # assert_equal ResinWrapper::Device, devices.first.class
+      assert_equal ResinWrapper::Device, devices.first.class
       assert_equal devices.count, 10
 
       # Check that the fields are accessible by our model

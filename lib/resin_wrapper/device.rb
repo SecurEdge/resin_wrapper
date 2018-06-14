@@ -38,7 +38,8 @@ module ResinWrapper
       end
       response = conn.get
       parsed_response = JSON.parse(response.body)
-      attributes = parsed_response['d']
+      devices = parsed_response['d']
+      result = devices.map{|device| new(device) }
       # byebug
     end
 
