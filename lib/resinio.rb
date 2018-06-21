@@ -1,6 +1,7 @@
 require_relative "resinio/version"
 require_relative "resinio/device"
+require_relative "resinio/application"
 
 module ResinIO
-  # Your code goes here...
+  API_URL = 'https://api.resin.io/v4'.freeze
 end

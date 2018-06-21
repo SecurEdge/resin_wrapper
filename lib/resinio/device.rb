@@ -2,8 +2,6 @@
 require 'faraday'
 require 'json'
 
-API_URL = 'https://api.resin.io/v4'.freeze
-
 module ResinIO
   class Device
     attr_reader :id, :uuid, :device_name, :device_type,
