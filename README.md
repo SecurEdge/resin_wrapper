@@ -1,3 +1,5 @@
+[![Build Status](https://semaphoreci.com/api/v1/securedge/resin_wrapper/branches/master/shields_badge.svg)](https://semaphoreci.com/securedge/resin_wrapper)
+
 # ResinWrapper
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/resin_wrapper`. To experiment with that code, run `bin/console` for an interactive prompt.
