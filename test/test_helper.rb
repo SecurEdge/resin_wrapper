@@ -1,5 +1,5 @@
 #test/test_helper.rb
-require './lib/resin_wrapper'
+require './lib/resinio'
 require 'minitest/autorun'
 require 'webmock/minitest'
 require 'vcr'

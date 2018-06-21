@@ -1,10 +1,10 @@
-# lib/resin_wrapper/device.rb
+# lib/resinio/device.rb
 require 'faraday'
 require 'json'
 
 API_URL = 'https://api.resin.io/v4'.freeze
 
-module ResinWrapper
+module ResinIO
   class Device
     attr_reader :id, :uuid, :device_name, :device_type,
                 :is_online, :status, :os_variant, :location,

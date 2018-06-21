@@ -1,17 +1,17 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "resin_wrapper/version"
+require "resinio/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "resin_wrapper"
-  spec.version       = ResinWrapper::VERSION
+  spec.name          = "resinio"
+  spec.version       = ResinIO::VERSION
   spec.authors       = ["Rodney Cullen"]
   spec.email         = ["rcullen@securedgenetworks.com"]
 
   spec.summary       = %q{Gem to wrap Resin.io API}
   spec.description   = %q{Gem to wrap Resin.io API}
-  spec.homepage      = "https://github.com/SecurEdge/resin_wrapper"
+  spec.homepage      = "https://github.com/SecurEdge/resinio"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

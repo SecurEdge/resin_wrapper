@@ -1,15 +1,15 @@
 # test/car/car_test.rb
 require './test/test_helper'
 
-class ResinWrapperDeviceTest < Minitest::Test
+class ResinIODeviceTest < Minitest::Test
   def test_exists
-    assert ResinWrapper::Device
+    assert ResinIO::Device
   end
 
   def test_it_gives_back_a_single_device
     VCR.use_cassette('one_device') do
-      device = ResinWrapper::Device.find(1131087)
-      assert_equal ResinWrapper::Device, device.class
+      device = ResinIO::Device.find(1131087)
+      assert_equal ResinIO::Device, device.class
 
       # Check that the fields are accessible by our model
       assert_equal 1131087, device.id
@@ -31,8 +31,8 @@ class ResinWrapperDeviceTest < Minitest::Test
 
   def test_it_gives_back_all_devices
     VCR.use_cassette('all_devices') do
-      devices = ResinWrapper::Device.all
-      assert_equal ResinWrapper::Device, devices.first.class
+      devices = ResinIO::Device.all
+      assert_equal ResinIO::Device, devices.first.class
       assert_equal devices.count, 10
 
       # Check that the fields are accessible by our model
