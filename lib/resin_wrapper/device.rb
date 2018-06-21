@@ -1,4 +1,4 @@
-# lib/benzinator/car.rb
+# lib/resin_wrapper/device.rb
 require 'faraday'
 require 'json'
 
@@ -6,7 +6,9 @@ API_URL = 'https://api.resin.io/v4'.freeze
 
 module ResinWrapper
   class Device
-    attr_reader :id, :uuid, :device_name, :device_type, :is_online, :status, :os_variant, :location
+    attr_reader :id, :uuid, :device_name, :device_type,
+                :is_online, :status, :os_variant, :location,
+                :commit, :os_version, :supervisor_version, :longitude, :latitude
     def initialize(attributes)
 
       @id = attributes['id']
@@ -17,6 +19,11 @@ module ResinWrapper
       @status = attributes['status']
       @os_variant = attributes['os_variant']
       @location = attributes['location']
+      @commit = attributes['is_on__commit']
+      @os_version = attributes['os_version']
+      @supervisor_version = attributes['supervisor_version']
+      @longitude = attributes['longitude']
+      @latitude = attributes['latitude']
 
     end
 

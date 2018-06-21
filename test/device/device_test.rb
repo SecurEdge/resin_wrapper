@@ -20,6 +20,11 @@ class ResinWrapperDeviceTest < Minitest::Test
       assert_equal "Idle", device.status
       assert_equal "dev", device.os_variant
       assert_equal "Charlotte, North Carolina, United States", device.location
+      assert_equal "12fe382498b5fc7777fcc2d0b05ceb1f09c52122", device.commit
+      assert_equal "Resin OS 2.12.7+rev1", device.os_version
+      assert_equal "7.4.3", device.supervisor_version
+      assert_equal "-80.8262", device.longitude
+      assert_equal "35.2157", device.latitude
 
     end
   end
