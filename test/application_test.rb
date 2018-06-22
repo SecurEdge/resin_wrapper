@@ -8,7 +8,7 @@ class ResinIOApplicationTest < Minitest::Test
 
   def test_it_gives_back_a_single_application
     VCR.use_cassette('one_application') do
-      application = ResinIO::Application.find(1032362)
+      application = ResinIO::Application.find(1_032_362)
       assert_equal ResinIO::Application, application.class
 
       # Check that the fields are accessible by our model
@@ -26,7 +26,7 @@ class ResinIOApplicationTest < Minitest::Test
       assert_equal applications.count, 6
 
       # Check that the fields are accessible by our model
-      assert_equal 1032362, applications.first.id
+      assert_equal 1_032_362, applications.first.id
     end
   end
 end

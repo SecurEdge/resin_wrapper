@@ -8,7 +8,6 @@ module ResinIO
                 :is_online, :status, :os_variant, :location,
                 :commit, :os_version, :supervisor_version, :longitude, :latitude
     def initialize(attributes)
-
       @id = attributes['id']
       @uuid = attributes['uuid']
       @device_name = attributes['device_name']
@@ -22,7 +21,6 @@ module ResinIO
       @supervisor_version = attributes['supervisor_version']
       @longitude = attributes['longitude']
       @latitude = attributes['latitude']
-
     end
 
     def self.find(id)
@@ -41,7 +39,6 @@ module ResinIO
     end
 
     def self.all
-
       conn = Faraday.new(url: "#{API_URL}/device") do |faraday|
         faraday.adapter Faraday.default_adapter # make requests with Net::HTTP
         faraday.headers['Content-Type'] = 'application/json' # form-encode POST params
@@ -50,7 +47,7 @@ module ResinIO
       response = conn.get
       parsed_response = JSON.parse(response.body)
       devices = parsed_response['d']
-      result = devices.map{|device| new(device) }
+      result = devices.map { |device| new(device) }
       # byebug
     end
 
