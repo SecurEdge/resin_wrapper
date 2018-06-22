@@ -8,7 +8,7 @@ class ResinIODeviceTest < Minitest::Test
 
   def test_it_gives_back_a_single_device
     VCR.use_cassette('one_device') do
-      device = ResinIO::Device.find(1_131_087)
+      device = ResinIO::Device.find(1131087)
       assert_equal ResinIO::Device, device.class
 
       # Check that the fields are accessible by our model
