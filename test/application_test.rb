@@ -12,24 +12,21 @@ class ResinIOApplicationTest < Minitest::Test
       assert_equal ResinIO::Application, application.class
 
       # Check that the fields are accessible by our model
-      assert_equal 1032362, application.id
-      assert_equal "tickRpi3Staging", application.app_name
-      assert_equal "bb6746a8e135fc7b869daaeda3183321cb5d3a5e", application.commit
-      assert_equal "raspberrypi3", application.device_type
-
-
+      assert_equal 1_032_362, application.id
+      assert_equal 'tickRpi3Staging', application.app_name
+      assert_equal 'bb6746a8e135fc7b869daaeda3183321cb5d3a5e', application.commit
+      assert_equal 'raspberrypi3', application.device_type
     end
   end
 
-  # def test_it_gives_back_all_devices
-  #   VCR.use_cassette('all_devices') do
-  #     devices = ResinIO::Device.all
-  #     assert_equal ResinIO::Device, devices.first.class
-  #     assert_equal devices.count, 10
-  #
-  #     # Check that the fields are accessible by our model
-  #     # assert_equal 1131087, device.id
-  #     # assert_equal "4c28d5cc7e45e9f325f4b6223103a698", device.uuid
-  #   end
-  # end
+  def test_it_gives_back_all_applications
+    VCR.use_cassette('all_applications') do
+      applications = ResinIO::Application.all
+      assert_equal ResinIO::Application, applications.first.class
+      assert_equal applications.count, 6
+
+      # Check that the fields are accessible by our model
+      assert_equal 1032362, applications.first.id
+    end
+  end
 end
