@@ -1,0 +1,86 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.resin.io/v4/device
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer RESIN_API_KEY
+      User-Agent:
+      - Faraday v0.15.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization, Application-Record-Count, MaxDataServiceVersion,
+        X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, PATCH, DELETE, OPTIONS, HEAD
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Contenttype:
+      - application/json
+      Date:
+      - Thu, 14 Jun 2018 12:57:35 GMT
+      Etag:
+      - W/"3bd7-HEwJkDMzg8d4/JgV+3xuy+NjtT8"
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"d":[{"id":1131087,"belongs_to__application":{"__deferred":{"uri":"/resin/application(1032362)"},"__id":1032362},"belongs_to__user":{"__deferred":{"uri":"/resin/user(35133)"},"__id":35133},"is_managed_by__device":null,"actor":2882664,"should_be_running__release":null,"device_name":"sen-charlotte-serverroom","device_type":"raspberrypi3","uuid":"4c28d5cc7e45e9f325f4b6223103a698","is_on__commit":"12fe382498b5fc7777fcc2d0b05ceb1f09c52122","note":null,"local_id":null,"status":"Idle","is_online":true,"last_connectivity_event":"2018-06-14T08:40:51.076Z","is_connected_to_vpn":true,"last_vpn_event":"2018-06-14T08:40:51.076Z","ip_address":"10.70.0.24
+        10.40.0.50","vpn_address":"10.240.41.230","public_address":"96.10.173.138","os_version":"Resin
+        OS 2.12.7+rev1","os_variant":"dev","supervisor_version":"7.4.3","should_be_managed_by__supervisor_release":null,"is_managed_by__service_instance":{"__deferred":{"uri":"/resin/service_instance(182)"},"__id":182},"provisioning_progress":null,"provisioning_state":"","download_progress":null,"is_web_accessible":true,"longitude":"-80.8262","latitude":"35.2157","location":"Charlotte,
+        North Carolina, United States","custom_longitude":"","custom_latitude":"","logs_channel":"8d8751c2186bca56f3afe0316553295ca3531c33b517ab9f6a8a8eaa344484","owns__device_log":{"__deferred":{"uri":"/resin/device_log(1131087)"},"__id":1131087},"is_locked_until__date":null,"is_accessible_by_support_until__date":null,"created_at":"2018-05-22T18:28:43.204Z","is_active":true,"__metadata":{"uri":"/resin/device(1131087)","type":""}},{"id":1126686,"belongs_to__application":{"__deferred":{"uri":"/resin/application(1032363)"},"__id":1032363},"belongs_to__user":{"__deferred":{"uri":"/resin/user(35133)"},"__id":35133},"is_managed_by__device":null,"actor":2872678,"should_be_running__release":null,"device_name":"riot-zerow","device_type":"raspberry-pi","uuid":"09c874a2b97370b26cf5526102f420f4","is_on__commit":"8fe2e6b5e86d4e4116f95f90f00514f084681323","note":"To
+        be manage by Kevin at RIoT lab in HQ Raleigh\n","local_id":null,"status":"Idle","is_online":true,"last_connectivity_event":"2018-06-13T02:01:04.386Z","is_connected_to_vpn":true,"last_vpn_event":"2018-06-13T02:01:04.386Z","ip_address":"10.19.0.184","vpn_address":"10.240.45.229","public_address":"204.16.138.214","os_version":"Resin
+        OS 2.12.6+rev1","os_variant":"dev","supervisor_version":"7.4.3","should_be_managed_by__supervisor_release":null,"is_managed_by__service_instance":{"__deferred":{"uri":"/resin/service_instance(182)"},"__id":182},"provisioning_progress":null,"provisioning_state":"","download_progress":null,"is_web_accessible":false,"longitude":"-78.6253","latitude":"35.7977","location":"Raleigh,
+        North Carolina, United States","custom_longitude":"","custom_latitude":"","logs_channel":"abb09ed8ca9bbcb41183a57c0a476548f1ee929b0d41a5a6071f406e1337d1","owns__device_log":{"__deferred":{"uri":"/resin/device_log(1126686)"},"__id":1126686},"is_locked_until__date":null,"is_accessible_by_support_until__date":null,"created_at":"2018-05-17T16:23:14.692Z","is_active":true,"__metadata":{"uri":"/resin/device(1126686)","type":""}},{"id":1128230,"belongs_to__application":{"__deferred":{"uri":"/resin/application(1032174)"},"__id":1032174},"belongs_to__user":{"__deferred":{"uri":"/resin/user(35133)"},"__id":35133},"is_managed_by__device":null,"actor":2876447,"should_be_running__release":null,"device_name":"floral-haze
+        maybe philips","device_type":"raspberry-pi","uuid":"7b6c2ea36fc0b5c432c084c4e8722748","is_on__commit":"8fe2e6b5e86d4e4116f95f90f00514f084681323","note":null,"local_id":null,"status":"Idle","is_online":false,"last_connectivity_event":"2018-05-31T23:45:11.022Z","is_connected_to_vpn":false,"last_vpn_event":"2018-05-31T23:45:11.022Z","ip_address":"192.168.1.186","vpn_address":null,"public_address":"104.139.122.242","os_version":"Resin
+        OS 2.12.6+rev1","os_variant":"prod","supervisor_version":"7.4.3","should_be_managed_by__supervisor_release":null,"is_managed_by__service_instance":{"__deferred":{"uri":"/resin/service_instance(181)"},"__id":181},"provisioning_progress":null,"provisioning_state":"","download_progress":null,"is_web_accessible":true,"longitude":"-80.8258","latitude":"35.1074","location":"Charlotte,
+        North Carolina, United States","custom_longitude":"","custom_latitude":"","logs_channel":"3c868c6dce9cded95679a561ff9d98d5e895032bfd8de2ac39de8bdd579894","owns__device_log":{"__deferred":{"uri":"/resin/device_log(1128230)"},"__id":1128230},"is_locked_until__date":null,"is_accessible_by_support_until__date":null,"created_at":"2018-05-17T22:48:53.505Z","is_active":true,"__metadata":{"uri":"/resin/device(1128230)","type":""}},{"id":1126684,"belongs_to__application":{"__deferred":{"uri":"/resin/application(1032363)"},"__id":1032363},"belongs_to__user":{"__deferred":{"uri":"/resin/user(35133)"},"__id":35133},"is_managed_by__device":null,"actor":2872675,"should_be_running__release":null,"device_name":"empty-fire","device_type":"raspberry-pi","uuid":"24a11a8ecdbb5f504028b00dd2872475","is_on__commit":"8fe2e6b5e86d4e4116f95f90f00514f084681323","note":null,"local_id":null,"status":"Idle","is_online":false,"last_connectivity_event":"2018-06-01T21:00:12.028Z","is_connected_to_vpn":false,"last_vpn_event":"2018-06-01T21:00:12.028Z","ip_address":"10.19.0.181","vpn_address":null,"public_address":"204.16.138.214","os_version":"Resin
+        OS 2.12.6+rev1","os_variant":"dev","supervisor_version":"7.4.3","should_be_managed_by__supervisor_release":null,"is_managed_by__service_instance":{"__deferred":{"uri":"/resin/service_instance(183)"},"__id":183},"provisioning_progress":null,"provisioning_state":"","download_progress":null,"is_web_accessible":true,"longitude":"-78.6253","latitude":"35.7977","location":"Raleigh,
+        North Carolina, United States","custom_longitude":"","custom_latitude":"","logs_channel":"4479828154c42ea5e283b37f7679c7b7efe9a730cb197ecf9a722e659b093a","owns__device_log":{"__deferred":{"uri":"/resin/device_log(1126684)"},"__id":1126684},"is_locked_until__date":null,"is_accessible_by_support_until__date":null,"created_at":"2018-05-17T16:12:24.394Z","is_active":true,"__metadata":{"uri":"/resin/device(1126684)","type":""}},{"id":1130190,"belongs_to__application":{"__deferred":{"uri":"/resin/application(1032176)"},"__id":1032176},"belongs_to__user":{"__deferred":{"uri":"/resin/user(35133)"},"__id":35133},"is_managed_by__device":null,"actor":2881272,"should_be_running__release":null,"device_name":"riot-rpi3","device_type":"raspberrypi3","uuid":"c7bb9541de3066cd785b1970269a6820","is_on__commit":"8fe2e6b5e86d4e4116f95f90f00514f084681323","note":"To
+        be manage by Kevin at RIoT lab in HQ Raleigh","local_id":null,"status":"Idle","is_online":true,"last_connectivity_event":"2018-06-13T18:24:43.199Z","is_connected_to_vpn":true,"last_vpn_event":"2018-06-13T18:24:43.199Z","ip_address":"10.19.0.91","vpn_address":"10.240.17.55","public_address":"204.16.138.214","os_version":"Resin
+        OS 2.12.6+rev1","os_variant":"prod","supervisor_version":"7.4.3","should_be_managed_by__supervisor_release":null,"is_managed_by__service_instance":{"__deferred":{"uri":"/resin/service_instance(176)"},"__id":176},"provisioning_progress":null,"provisioning_state":"","download_progress":null,"is_web_accessible":false,"longitude":"-78.6253","latitude":"35.7977","location":"Raleigh,
+        North Carolina, United States","custom_longitude":"","custom_latitude":"","logs_channel":"1ebf69e4a2d6f44a81bb96bc1bc527108fd505ace2329b1019226c5896938e","owns__device_log":{"__deferred":{"uri":"/resin/device_log(1130190)"},"__id":1130190},"is_locked_until__date":null,"is_accessible_by_support_until__date":null,"created_at":"2018-05-18T13:24:36.947Z","is_active":true,"__metadata":{"uri":"/resin/device(1130190)","type":""}},{"id":1130191,"belongs_to__application":{"__deferred":{"uri":"/resin/application(1032176)"},"__id":1032176},"belongs_to__user":{"__deferred":{"uri":"/resin/user(35133)"},"__id":35133},"is_managed_by__device":null,"actor":2881273,"should_be_running__release":null,"device_name":"silent-breeze","device_type":"raspberrypi3","uuid":"f03b8d1ac182d737a030573a4ed74835","is_on__commit":"8fe2e6b5e86d4e4116f95f90f00514f084681323","note":null,"local_id":null,"status":"Idle","is_online":false,"last_connectivity_event":"2018-05-26T17:53:41.318Z","is_connected_to_vpn":false,"last_vpn_event":"2018-05-26T17:53:41.318Z","ip_address":"10.19.0.94","vpn_address":null,"public_address":"204.16.138.214","os_version":"Resin
+        OS 2.12.6+rev1","os_variant":"prod","supervisor_version":"7.4.3","should_be_managed_by__supervisor_release":null,"is_managed_by__service_instance":{"__deferred":{"uri":"/resin/service_instance(183)"},"__id":183},"provisioning_progress":null,"provisioning_state":"","download_progress":null,"is_web_accessible":false,"longitude":"-78.6253","latitude":"35.7977","location":"Raleigh,
+        North Carolina, United States","custom_longitude":"","custom_latitude":"","logs_channel":"61e0ea749b0ed30a9fe91f7d9c24075b80e32fe6d3878be5f42f9b16d31891","owns__device_log":{"__deferred":{"uri":"/resin/device_log(1130191)"},"__id":1130191},"is_locked_until__date":null,"is_accessible_by_support_until__date":null,"created_at":"2018-05-18T13:28:50.439Z","is_active":true,"__metadata":{"uri":"/resin/device(1130191)","type":""}},{"id":1131100,"belongs_to__application":{"__deferred":{"uri":"/resin/application(1109314)"},"__id":1109314},"belongs_to__user":{"__deferred":{"uri":"/resin/user(35133)"},"__id":35133},"is_managed_by__device":null,"actor":2882686,"should_be_running__release":null,"device_name":"patient-lake","device_type":"beaglebone-green","uuid":"c0442602f57992f3a27e22c82e6df38b","is_on__commit":"8d1f7012023ff2f1cad13e0197a93821ee24a1b2","note":null,"local_id":null,"status":"Idle","is_online":false,"last_connectivity_event":"2018-05-24T17:59:13.042Z","is_connected_to_vpn":false,"last_vpn_event":"2018-05-24T17:59:13.042Z","ip_address":"10.40.0.78","vpn_address":null,"public_address":"96.10.173.138","os_version":"Resin
+        OS 2.12.3+rev1","os_variant":"dev","supervisor_version":"7.1.14","should_be_managed_by__supervisor_release":null,"is_managed_by__service_instance":{"__deferred":{"uri":"/resin/service_instance(185)"},"__id":185},"provisioning_progress":null,"provisioning_state":"","download_progress":null,"is_web_accessible":true,"longitude":"-80.8262","latitude":"35.2157","location":"Charlotte,
+        North Carolina, United States","custom_longitude":"","custom_latitude":"","logs_channel":"dc989b14ee28c7fdef8eec6e6f43c306ed3763800f5a7e0eca8604fb997495","owns__device_log":{"__deferred":{"uri":"/resin/device_log(1131100)"},"__id":1131100},"is_locked_until__date":null,"is_accessible_by_support_until__date":null,"created_at":"2018-05-22T19:00:38.029Z","is_active":true,"__metadata":{"uri":"/resin/device(1131100)","type":""}},{"id":1141564,"belongs_to__application":{"__deferred":{"uri":"/resin/application(1032362)"},"__id":1032362},"belongs_to__user":{"__deferred":{"uri":"/resin/user(35133)"},"__id":35133},"is_managed_by__device":null,"actor":2918246,"should_be_running__release":null,"device_name":"cm01","device_type":"raspberrypi3","uuid":"1150010d555d66ba20bdd0a50ccdbcc8","is_on__commit":"03c3eed1747bbd09c3acf8b50a77bf9f65454a03","note":null,"local_id":null,"status":"Idle","is_online":false,"last_connectivity_event":"2018-05-30T16:41:47.093Z","is_connected_to_vpn":false,"last_vpn_event":"2018-05-30T16:41:47.093Z","ip_address":"10.19.0.210","vpn_address":null,"public_address":"204.16.138.214","os_version":"Resin
+        OS 2.12.7+rev1","os_variant":"dev","supervisor_version":"7.4.3","should_be_managed_by__supervisor_release":null,"is_managed_by__service_instance":{"__deferred":{"uri":"/resin/service_instance(182)"},"__id":182},"provisioning_progress":null,"provisioning_state":"","download_progress":null,"is_web_accessible":false,"longitude":"-78.646","latitude":"35.8116","location":"Raleigh,
+        North Carolina, United States","custom_longitude":"","custom_latitude":"","logs_channel":"9912e55b2a1aece51b4fc1ddbb709b2627f23517a0635c17ab9505f5c46d01","owns__device_log":{"__deferred":{"uri":"/resin/device_log(1141564)"},"__id":1141564},"is_locked_until__date":null,"is_accessible_by_support_until__date":null,"created_at":"2018-05-30T16:06:51.206Z","is_active":true,"__metadata":{"uri":"/resin/device(1141564)","type":""}},{"id":1143512,"belongs_to__application":{"__deferred":{"uri":"/resin/application(1032362)"},"__id":1032362},"belongs_to__user":{"__deferred":{"uri":"/resin/user(35133)"},"__id":35133},"is_managed_by__device":null,"actor":2926272,"should_be_running__release":null,"device_name":"cm02","device_type":"raspberrypi3","uuid":"9b747ebc4c116cf8939702acaee31e70","is_on__commit":"f229f99774c5dc895b6879f4e140c359aa096dac","note":null,"local_id":null,"status":"Idle","is_online":false,"last_connectivity_event":"2018-06-01T16:05:02.042Z","is_connected_to_vpn":false,"last_vpn_event":"2018-06-01T16:05:02.042Z","ip_address":"10.19.0.210","vpn_address":null,"public_address":"204.16.138.214","os_version":"Resin
+        OS 2.12.7+rev1","os_variant":"dev","supervisor_version":"7.4.3","should_be_managed_by__supervisor_release":null,"is_managed_by__service_instance":{"__deferred":{"uri":"/resin/service_instance(185)"},"__id":185},"provisioning_progress":null,"provisioning_state":"","download_progress":null,"is_web_accessible":false,"longitude":"-78.646","latitude":"35.8116","location":"Raleigh,
+        North Carolina, United States","custom_longitude":"","custom_latitude":"","logs_channel":"3f6cb88e1034fcd4bbd06f4d8f074dab21e9e72dbeb92e788b7876281bef02","owns__device_log":{"__deferred":{"uri":"/resin/device_log(1143512)"},"__id":1143512},"is_locked_until__date":null,"is_accessible_by_support_until__date":null,"created_at":"2018-05-31T21:26:57.580Z","is_active":true,"__metadata":{"uri":"/resin/device(1143512)","type":""}},{"id":1064911,"belongs_to__application":{"__deferred":{"uri":"/resin/application(1032176)"},"__id":1032176},"belongs_to__user":{"__deferred":{"uri":"/resin/user(35133)"},"__id":35133},"is_managed_by__device":null,"actor":2727432,"should_be_running__release":null,"device_name":"rpi3-ibiza-home","device_type":"raspberrypi3","uuid":"0e4fbd292f07d0cd0c7484d63aae5b84","is_on__commit":"8fe2e6b5e86d4e4116f95f90f00514f084681323","note":null,"local_id":null,"status":"Idle","is_online":true,"last_connectivity_event":"2018-06-13T09:14:48.151Z","is_connected_to_vpn":true,"last_vpn_event":"2018-06-13T09:14:48.151Z","ip_address":"192.168.1.132
+        192.168.1.34","vpn_address":"10.240.14.17","public_address":"83.61.202.217","os_version":"Resin
+        OS 2.12.5+rev2","os_variant":"dev","supervisor_version":"7.1.18","should_be_managed_by__supervisor_release":null,"is_managed_by__service_instance":{"__deferred":{"uri":"/resin/service_instance(184)"},"__id":184},"provisioning_progress":null,"provisioning_state":"","download_progress":null,"is_web_accessible":true,"longitude":"2.6552","latitude":"39.5743","location":"Palma,
+        Balearic Islands, Spain","custom_longitude":"","custom_latitude":"","logs_channel":"13075ef6b38bbeeb2197a13e8366875299b34ceb4ffcf29baf1300a28f8aca","owns__device_log":{"__deferred":{"uri":"/resin/device_log(1064911)"},"__id":1064911},"is_locked_until__date":null,"is_accessible_by_support_until__date":null,"created_at":"2018-04-19T12:16:19.153Z","is_active":true,"__metadata":{"uri":"/resin/device(1064911)","type":""}}]}'
+    http_version:
+  recorded_at: Thu, 14 Jun 2018 12:57:35 GMT
+recorded_with: VCR 4.0.0

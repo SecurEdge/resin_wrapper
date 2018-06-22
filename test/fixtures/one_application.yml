@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.resin.io/v4/application(1032362)
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer RESIN_API_KEY
+      User-Agent:
+      - Faraday v0.15.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization, Application-Record-Count, MaxDataServiceVersion,
+        X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, PATCH, DELETE, OPTIONS, HEAD
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Contenttype:
+      - application/json
+      Date:
+      - Fri, 22 Jun 2018 08:32:50 GMT
+      Etag:
+      - W/"1fa-lSOSqrqyy9ou6DsdaULbgth1TqA"
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      Content-Length:
+      - '506'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"d":[{"id":1032362,"user":{"__deferred":{"uri":"/resin/user(35133)"},"__id":35133},"depends_on__application":null,"actor":2718890,"app_name":"tickRpi3Staging","git_repository":"rcullen/tickrpi3staging","commit":"bb6746a8e135fc7b869daaeda3183321cb5d3a5e","application_type":{"__deferred":{"uri":"/resin/application_type(5)"},"__id":5},"device_type":"raspberrypi3","should_track_latest_release":true,"is_accessible_by_support_until__date":null,"__metadata":{"uri":"/resin/application(1032362)","type":""}}]}'
+    http_version:
+  recorded_at: Fri, 22 Jun 2018 08:32:50 GMT
+recorded_with: VCR 4.0.0

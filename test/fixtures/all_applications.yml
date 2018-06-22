@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.resin.io/v4/application
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer RESIN_API_KEY
+      User-Agent:
+      - Faraday v0.15.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization, Application-Record-Count, MaxDataServiceVersion,
+        X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, PATCH, DELETE, OPTIONS, HEAD
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Contenttype:
+      - application/json
+      Date:
+      - Fri, 22 Jun 2018 07:22:58 GMT
+      Etag:
+      - W/"b99-Q2zYQTef2riEdd8ruZD4d5mlASk"
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"d":[{"id":1032362,"user":{"__deferred":{"uri":"/resin/user(35133)"},"__id":35133},"depends_on__application":null,"actor":2718890,"app_name":"tickRpi3Staging","git_repository":"rcullen/tickrpi3staging","commit":"bb6746a8e135fc7b869daaeda3183321cb5d3a5e","application_type":{"__deferred":{"uri":"/resin/application_type(5)"},"__id":5},"device_type":"raspberrypi3","should_track_latest_release":true,"is_accessible_by_support_until__date":null,"__metadata":{"uri":"/resin/application(1032362)","type":""}},{"id":1032363,"user":{"__deferred":{"uri":"/resin/user(35133)"},"__id":35133},"depends_on__application":null,"actor":2718893,"app_name":"tickRpi1Staging","git_repository":"rcullen/tickrpi1staging","commit":"12fe382498b5fc7777fcc2d0b05ceb1f09c52122","application_type":{"__deferred":{"uri":"/resin/application_type(5)"},"__id":5},"device_type":"raspberry-pi","should_track_latest_release":true,"is_accessible_by_support_until__date":null,"__metadata":{"uri":"/resin/application(1032363)","type":""}},{"id":1122540,"user":{"__deferred":{"uri":"/resin/user(35133)"},"__id":35133},"depends_on__application":null,"actor":2913471,"app_name":"keenMetrics","git_repository":"rcullen/keenmetrics","commit":"d0ef9f5e06c134bfc8212493b23ddeabd8183bcd","application_type":{"__deferred":{"uri":"/resin/application_type(5)"},"__id":5},"device_type":"raspberrypi3","should_track_latest_release":true,"is_accessible_by_support_until__date":null,"__metadata":{"uri":"/resin/application(1122540)","type":""}},{"id":1109314,"user":{"__deferred":{"uri":"/resin/user(35133)"},"__id":35133},"depends_on__application":null,"actor":2881424,"app_name":"beagleBoneGreen","git_repository":"rcullen/beaglebonegreen","commit":"8d1f7012023ff2f1cad13e0197a93821ee24a1b2","application_type":{"__deferred":{"uri":"/resin/application_type(5)"},"__id":5},"device_type":"beaglebone-green","should_track_latest_release":true,"is_accessible_by_support_until__date":null,"__metadata":{"uri":"/resin/application(1109314)","type":""}},{"id":1032174,"user":{"__deferred":{"uri":"/resin/user(35133)"},"__id":35133},"depends_on__application":null,"actor":2717905,"app_name":"tickRpi1","git_repository":"rcullen/tickrpi1","commit":"12fe382498b5fc7777fcc2d0b05ceb1f09c52122","application_type":{"__deferred":{"uri":"/resin/application_type(5)"},"__id":5},"device_type":"raspberry-pi","should_track_latest_release":true,"is_accessible_by_support_until__date":null,"__metadata":{"uri":"/resin/application(1032174)","type":""}},{"id":1032176,"user":{"__deferred":{"uri":"/resin/user(35133)"},"__id":35133},"depends_on__application":null,"actor":2717913,"app_name":"tickRpi3","git_repository":"rcullen/tickrpi3","commit":"12fe382498b5fc7777fcc2d0b05ceb1f09c52122","application_type":{"__deferred":{"uri":"/resin/application_type(5)"},"__id":5},"device_type":"raspberrypi3","should_track_latest_release":true,"is_accessible_by_support_until__date":null,"__metadata":{"uri":"/resin/application(1032176)","type":""}}]}'
+    http_version:
+  recorded_at: Fri, 22 Jun 2018 07:22:59 GMT
+recorded_with: VCR 4.0.0
