@@ -1,4 +1,4 @@
-[![Build Status](https://semaphoreci.com/api/v1/securedge/resinio/branches/master/shields_badge.svg)](https://semaphoreci.com/securedge/resinio)
+[![Build Status](https://semaphoreci.com/api/v1/securedge/resinio/branches/master/shields_badge.svg)](https://semaphoreci.com/securedge/resinio) [![Gem Version](https://badge.fury.io/rb/resinio.svg)](https://badge.fury.io/rb/resinio)
 
 # ResinIO
 
